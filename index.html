@@ -52,10 +52,55 @@
         }
         img[src="banner.png"] 
         {
-            height:450%;
+            height:40%;
             width:100%;
-            margin-top:-1%;
+            position: absolute;
+            left:0;
+            margin-top:2%;
             border-bottom: 1px solid black;
+        }
+        img[src="teddy.gif"] {
+            height:15%;
+            width:7%;
+            float:right;
+            margin: -6.2% 0%;
+        }
+        img[src="teddy2.gif"] {
+            height:15%;
+            width:7%;
+            float:left;
+            margin: -6.2% 0%;
+        }
+        .shop
+        {
+            font-size:250%; 
+            margin-top:21%  
+        }
+        .surpise {
+            font-size:200%;
+        }
+        table {
+            width: 100%;
+            text-align: center;
+        }
+        .type {
+            height:90%;
+            width:90%;
+            align-items: center;
+            margin-top: 10%;
+            border-radius: 50%;
+            box-shadow: 0 0 5px #FF007F, 0 03px #FF007F;
+        }
+        td p {  
+            font-size:100%;
+            font-weight: 400;
+            width:50%;
+            margin:-25% 25%;
+            color:white;
+            text-align:center;
+            backdrop-filter: blur(10px);
+            padding:1%;
+            text-shadow:0 0 2px white;
         }
     </style>
 </head>
@@ -71,10 +116,26 @@
                     <li><a href="/">Account</a></li>
                     <img src="cart.png">
                 </ul>
-                </div>
-                <img src="banner.png">
             </div>
         </div>
     </nav>
+    <img src="banner.png">
+    <br>
+    <center> 
+    <div class="shop"><b>Shop By Occasions & Relations</b></div>
+    <div class="surpise">Surprise your Loved Ones</div>      
+    </center>
+    <img src="teddy.gif">
+    <img src="teddy2.gif"> 
+    <table>
+        <tr>
+            <td><img src="anni.png"class="type"><p>Anniversary</p></td>
+            <td><img src="birthday.png"class="type"><p>Birthday</p></td>
+            <td><img src="father.png"class="type"><p>Father's Day</p></td>
+            <td><img src="women.png"class="type"><p>Women's day</p></td>
+            <td><img src="mother.png"class="type"><p>Mother's Day</p></td>
+            <td><img src="teacher.png"class="type"><p>Teacher's Day</p></td>
+        </tr>
+    </table>
 </body>
 </html>
