@@ -1,7 +1,5 @@
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower</title>
     <style>
@@ -10,6 +8,7 @@
         }
         body {
             background-color:#FFE3F1;
+            overflow-x: hidden;
         }
         nav {
             position: fixed;
@@ -60,16 +59,35 @@
             border-bottom: 1px solid black;
         }
         img[src="teddy.gif"] {
-            height:15%;
-            width:7%;
+            height:13%;
+            width:6%;
             float:right;
-            margin: -6.2% 0%;
+            margin: -6.2% 1%;
         }
         img[src="teddy2.gif"] {
-            height:15%;
-            width:7%;
+            height:13%;
+            width:6%;
             float:left;
-            margin: -6.2% 0%;
+            margin: -6.2% 1%;
+        }
+        img[src="teddy3.gif"] {
+            height:12.5%;
+            width:9.5%;
+            float:left;
+            margin: -34.4% 2%;
+        }
+        img[src="teddy4.gif"] {
+            height:12.5%;
+            width:9.5%;
+            float:right;
+            margin: -34.4% 2%;
+        }
+        img[src="valen.jpg"] {
+            height:60%;
+            width:96%;
+            box-shadow: 0 0 5px #FF007F, 0 03px #FF007F;
+            border-radius: 1%;
+            margin-top:-2.5%;
         }
         .shop
         {
@@ -101,6 +119,174 @@
             backdrop-filter: blur(10px);
             padding:1%;
             text-shadow:0 0 2px white;
+        }
+        h1 {
+            font-size:400%;
+            margin-top: 8%;
+            font-weight: 900;
+            background-image: url("heart.jpg");
+            background-size: 10% 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color:transparent;
+            -webkit-text-stroke: 0.2px red;
+        }
+        form {
+            margin-top:-9%;
+            margin-left: 8%;
+        }
+        form input[type="text"] {
+            width: 150px; 
+            height:25px;
+            font-size: 100%;
+            border: none; 
+            outline: none;
+            background-color: #FFE3F1;
+        }
+        label {
+            color:#e83543;   
+        }
+        ul {
+            color:#e83543;
+        }
+        .output {
+            margin-top: -38%;
+            margin-left:47%;
+            font-size: 120%;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            transform: rotate(-45deg);
+        }
+        .output div::after {
+            content: "&";
+            margin: 0 5px; 
+        }
+        .output div::before {
+            content: attr(data-text);
+        }
+        .output div:last-child::after {
+            content: none;
+        }
+        .output2 {
+            margin-top: 20%;
+            margin-left:78%;
+            font-size: 120%;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .output2 div::after {
+            content: "♡";
+            margin: 0 5px; 
+        }
+        .output2 div::before {
+            content: attr(data-text);
+        }
+        .output2 div:last-child::after {
+            content: none;
+        }
+        .output3 {
+            margin-top: 10%;
+            margin-left:51%;
+            font-size: 100%;
+            color:white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .output3 div::after {
+            content: "-";
+            margin: 0 5px; 
+        }
+        .output3 div::before {
+            content: attr(data-text);
+        }
+        .output3 div:last-child::after {
+            content: none;
+        }
+        button {
+        width: 10%;
+        height: 30px;
+        border-radius: 40px;
+        background-color: #e83543;
+        color:white;
+        font-weight: 600;
+        margin-left:13%;
+        margin-top:-1%;
+        }
+        .container {
+            height:50%;
+            width:76%;
+            box-shadow: 0 0 5px #FF007F, 0 03px #FF007F;
+            border-radius: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: large;
+        }
+        img[src="rash1.jpg"] {
+            float:right;
+            height:100%;
+            border-radius: 1%;
+            transform: scaleX(-1);
+        }
+        img[src="rashful.png"] {
+            float:left;
+            height:80%;
+        }
+        .container {
+      position: relative;
+  }
+  .rash1 {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      border-radius: 1%;
+      transition: opacity 0.5s ease-in-out;
+  }
+  .rashful {
+      position: absolute;
+      left: 0;
+      height: 80%;
+      cursor: grab;
+  }
+  .rashful:active {
+      cursor: grabbing;
+  }
+  .container:hover .rashful {
+      animation: moveRashful 2s forwards;
+  }
+  .container:hover .rash1 {
+      opacity: 0;
+  }
+  .container:hover .rash2 {
+      opacity: 1;
+  }
+  .rash2 {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width:60%;
+      border-radius: 1%;
+      box-shadow: 5px 0 5px -3px #FF007F;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+  }
+  @keyframes moveRashful {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(70%); }
+  }
+    img[src="dancecat.gif"] {
+            float:left;
+            margin-top: -19%;
+            margin-left: -2%;
+        }
+    img[src="dancecat1.gif"] {
+            float:right;
+            margin-top: -19%;
+            margin-right: -2%;
         }
     </style>
 </head>
@@ -137,5 +323,51 @@
             <td><img src="teacher.png"class="type"><p>Teacher's Day</p></td>
         </tr>
     </table>
+    <center>
+    <h1>Valentine's Day</h1>
+    <img src="valen.jpg">
+    </center>
+    <form>
+        <ul><b>
+        <li><label>Your Name : </label><input type="text" id="yourName" oninput="document.getElementById('yourNameOutput').setAttribute('data-text', this.value);document.getElementById('yourNameOutput2').setAttribute('data-text', this.value);document.getElementById('yourNameOutput3').setAttribute('data-text', this.value)"></li>
+        <li><label>Partner Name: </label><input type="text" id="partnerName" oninput="document.getElementById('partnerNameOutput').setAttribute('data-text', this.value);document.getElementById('partnerNameOutput2').setAttribute('data-text', this.value);document.getElementById('partnerNameOutput3').setAttribute('data-text', this.value)"></li>
+        </b></ul>
+    </form>
+    <br>
+    <br>
+    <br>
+    <div class="output">
+        <div id="yourNameOutput" data-text=""></div>
+        <div id="partnerNameOutput" data-text=""></div>
+    </div>
+    <div class="output2">
+        <div id="yourNameOutput2" data-text=""></div>
+        <div id="partnerNameOutput2" data-text=""></div>
+    </div>
+    <div class="output3">
+        <div id="yourNameOutput3" data-text=""></div>
+        <div id="partnerNameOutput3" data-text=""></div>
+    </div>
+    <button>Order</button>
+    <br>
+    <img src="teddy3.gif">
+    <img src="teddy4.gif">
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+    <div class="container">
+        <img src="rash1.jpg" class="rash1">
+        <img src="rash2.gif" class="rash2">
+        <img src="rashful.png" class="rashful">
+        <b>She Looks Angry <br>
+        Give her Flowers</b>
+    </div>
+    <img src="dancecat.gif">
+    <img src="dancecat1.gif">
+    <br>
+    <br>
+    </center>
 </body>
 </html>
